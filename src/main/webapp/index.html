@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167873271-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-167873271-1');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
-    <meta name="author" content="Creative Tim">
-    <title>SEF site</title>
+    <meta name="description" content="Helping local students connect with industry experts and academics around the
+                        world">
+    <meta name="author" content="Sustainable Education Foundation">
+    <meta property="og:image" content="assets/img/homepage/home%20illus.png">
+    <title>Home | Sustainable Education Foundation</title>
     <!-- Favicon -->
     <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
     <!-- Fonts -->
@@ -14,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
     <!-- Argon CSS -->
     <link type="text/css" href="assets/css/argon.css?v=1.0.1" rel="stylesheet">
     <!-- global CSS -->
@@ -40,7 +49,7 @@
                     <p class="text-muted">Helping local students connect with industry experts and academics around the
                         world</p>
                     <a class="btn btn-orange text-white text-uppercase px-5 py-3 badge-pill my-md-4 text-roboto"
-                       href="#explore">explore</a>
+                       href="#projects">explore</a>
                 </div>
                 <div class="col-md-5">
                     <img src="assets/img/homepage/home%20illus.png" class="img-fluid">
@@ -50,149 +59,235 @@
     </section>
 
     <section class="section">
-        <img src="assets/img/homepage/Polygon%207.png" class="d-none d-md-block"
-             style="position: absolute; left: -270px; top: 0px; max-width: 50%">
-        <div class="container">
-            <div class="row justify-content-center py-md-5">
-                <div class="col-md-4 text-center">
-                    <p class="display-3 text-darker font-weight-bold">250 000+</p>
-                    <p class="text-dark font-weight-450 " style="font-size: 2ch">
-                        Students reached via our Onelive interactive webinar series
-                    </p>
+        <div class="container-fluid text-center">
+            <div class="h4 font-weight-900 text-dark text-center text-capitalize mb-4">Our mentors and speakers are from
+                <span class="h6 align-text-top">*</span>
+            </div>
+            <div class="row pb-3 ml-4 ml-md-0">
+                <div class="col-md-2 offset-md-1 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/google.png">
                 </div>
-                <div class="col-md-4 text-center">
-                    <p class="display-3 text-darker font-weight-bold">2 400+</p>
-                    <p class="text-dark font-weight-450 " style="font-size: 2ch">
-                        Hours of mentoring provided via our ScholarX program
-                    </p>
+                <div class="col-md-2 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/facebook.png">
                 </div>
-                <div class="col-md-4 text-center">
-                    <p class="display-3 text-darker font-weight-bold">100+</p>
-                    <p class="text-dark font-weight-450" style="font-size: 2ch">
-                        Researchers of Sri Lankan origin representing the world's top universities
-                    </p>
+                <div class="col-md-2 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/microsoft.png">
+                </div>
+                <div class="col-md-2 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/apple.png">
+                </div>
+                <div class="col-md-2 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/linkedin.png">
+                </div>
+                <div class="col-md-2 offset-md-1 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/mit.png">
+                </div>
+                <div class="col-md-2 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/stanford.png">
+                </div>
+                <div class="col-md-2 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/harvard.png">
+                </div>
+                <div class="col-md-2 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/oxford.png">
+                </div>
+                <div class="col-md-2 col-6 mb-4 mt-3 pr-5">
+                    <img class="mx-auto img-fluid"
+                         src="assets/img/logos/cambridge.png">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section" id="explore">
-        <img src="assets/img/homepage/Polygon%209.png" class="d-none d-md-block"
-             style="position: absolute; right: -420px; top: 0px; max-width: 50%">
+    <section class="section" id="projects">
         <div class="container">
             <div class="row py-3">
                 <div class="col">
-                    <h2 class="font-weight-900 text-dark text-roboto text-center text-uppercase">Our flagship
-                        programs</h2>
+                    <h2 class="font-weight-900 text-dark text-roboto text-center text-uppercase">Our projects</h2>
                 </div>
             </div>
-            <div class="row py-3">
-                <div class="col-md-3 px-2 my-2">
-                    <div class="card shadow p-2">
-                        <a href="onelive.html">
-                            <img src="assets/img/brand/one-live-home-logo.png" class="img-fluid py-5 mb-2 mt-1">
-                        </a>
+            <div class="card-deck col-md-12">
+                <a href="onelive" class="card col-md-4 shadow project-card">
+                    <div class="card-body">
+                        <img src="assets/img/projects/onelive.png"
+                             class="card-img-top project-img img-center"
+                             alt="OneLive">
+                        <p class="card-text text-darker text-center">"OneLive" is an interactive webinar series done
+                            every weekend with the
+                            experts in their fields to expand
+                            the knowledge of Sri Lankan students.
+                        </p>
+                        <h5 class="display-3 text-center project-stat">275 000+</h5>
+                        <p class="text-dark text-center stats">
+                            Students reached via our Onelive interactive webinar series
+                        </p>
+                    </div>
+                </a>
+                <a href="scholarx" class="card col-md-4 shadow project-card">
+                    <div class="card-body">
+                        <img src="assets/img/brand/scholarx.png" class="card-img-top project-img img-center"
+                             alt="ScholarX"
+                        >
+                        <p class="card-text text-darker text-center">ScholarX is an exclusive 6-month mentoring program
+                            aimed
+                            at a
+                            selected
+                            pool of undergraduate students based in Sri Lanka.</p>
+                        <h5 class="display-3 text-center project-stat">
+                            2500+</h5>
+                        <p class="text-dark text-center stats">
+                            Hours of mentoring provided via our ScholarX program
+                        </p>
+                    </div>
+                </a>
+                <a href="irc.html" class="card col-md-4 shadow project-card">
+                    <div class="card-body">
+                        <img src="assets/img/projects/irc.png" class="card-img-top project-img img-center" alt="IRC"
+                        >
+                        <p class="card-text text-darker text-center">The International Research Council (IRC) is a
+                            community
+                            created by
+                            SEF to
+                            showcase the work in various fields of Sri Lankan researchers.</p>
+                        <h5 class="display-3 text-center project-stat">100+</h5>
+                        <p class="text-dark text-center stats">
+                            Researchers of Sri Lankan origin representing the world's top universities
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <br/>
+            <div class="card-deck justify-content-center col-md-12">
+                <a href="student-ambassador.html" class="card col-md-4 shadow project-card">
+                    <div class="card-body">
+                        <img src="assets/img/projects/sa.png" class="card-img-top project-img img-center"
+                             alt="Student Ambassador">
+                        <p class="card-text text-darker text-center">Student Ambassadors (SA) of the Sustainable
+                            Education Foundation (SEF) will act as a liaison for SEF while also acting as an
+                            Evangelist for the Sustainable
+                            Education Foundation.</p>
+                        <h5 class="display-3 text-center project-stat">100+</h5>
+                        <p class="text-dark text-center stats">
+                            Students trained with soft skills required for the industry
+                        </p>
+                    </div>
+                </a>
+                <a href="https://sefglobal.org/academix/" class="card col-md-4 shadow project-card">
+                    <div class="card-body">
+                        <img src="assets/img/projects/academix.png" class="card-img-top project-img img-center"
+                             alt="Academix">
+                        <p class="card-text text-darker text-center">AcadeMix aims to curate a collection of free
+                            education resources
+                            for Sri Lankan students to maximise their learning
+                            potential from Primary through to Post Graduate education.</p>
+                        <h5 class="display-3 text-center project-stat">
+                            100+</h5>
+                        <p class="text-dark text-center stats">
+                            Free online resources to learn from home
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="container my-5">
+            <div class="col">
+                <h3 class="font-weight-900 text-center mb-md-5 mb-5"> At SEF, we have something in store for everyone!</h3>
+            </div>
+            <div class="row align-items-center justify-content-center mb-3 mb-md-5">
+                <div class="col-md-6">
+                    <img src="/assets/img/homepage/Student.png" class="img-fluid align-self-center w-75 align-md-left hide-sm-image">
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex px-3">
+                        <div class="pl-4">
+                            <h3 class="mb-3">Students</h3>
+                            <img src="/assets/img/homepage/Student.png" class="img-fluid align-self-center w-75 hide-md-image align-sm-center mb-3">
+                            <p class="text-justify">Interact directly with a curated list of industry experts and academics across the globe
+                                via our host of programs including <a href="onelive/index.html">OneLive</a>, <a href="scholarx/index.html">ScholarX</a>
+                                and <a href="irc.html">IRC</a> to gain valuable perspectives and insight on how to customise and innovate a new career path for you.
+                                Our <a href="https://sefglobal.org/academix/">AcadeMix</a> and <a href="student-ambassador.html">Student Ambassador</a> Program
+                                offerings will also get you industry ready by your graduation and expose you to postgraduate, internship and job opportunities.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 px-2 my-2">
-                    <div class="card shadow p-2">
-                        <a href="scholarx.html">
-                            <img src="assets/img/brand/scholarx.png" class="img-fluid my-5">
-                        </a>
+            </div>
+            <div class="row align-items-center justify-content-center mb-3 mb-md-5">
+                <div class="col-md-6 order-1 order-md-0">
+                    <div class="d-flex px-3">
+                        <div class="pl-4">
+                            <h3 class="mb-3">Experts</h3>
+                            <img src="/assets/img/homepage/Expert.png" class="img-fluid align-self-center w-75 hide-md-image align-sm-center mb-3">
+                            <p class="text-justify">If you are an expert in the industry, join SEF, for we host mentoring programs, where you
+                                can showcase your expertise to the scholars seeking guidance. You will also get a chance
+                                to connect with the young talent in Sri Lanka, and make an impact on the Sri Lankan
+                                education system with the plethora of knowledge you possess.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 px-2 my-2">
-                    <div class="card shadow ">
-                        <a href="irc.html">
-                            <img src="assets/img/brand/irc.png" class="img-fluid">
-                        </a>
-                    </div>
+                <div class="col-md-6 order-0 order-md-1">
+                    <img src="/assets/img/homepage/Expert.png" class="img-fluid align-self-center w-75 align-md-right hide-sm-image">
                 </div>
-                <div class="col-md-3 px-2 my-2">
-                    <div class="card shadow p-2">
-                        <a href="student-ambassador.html">
-                            <img src="assets/img/brand/SA.png" class="img-fluid py-5 mb-1">
-                        </a>
+            </div>
+            <div class="row align-items-center justify-content-center mb-3 mb-md-5">
+                <div class="col-md-6">
+                    <img src="/assets/img/homepage/Volunteer.png" class="img-fluid align-self-center w-75 align-md-left hide-sm-image">
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex px-3">
+                        <div class="pl-4">
+                            <h3 class="mb-3">Volunteers</h3>
+                            <img src="/assets/img/homepage/Volunteer.png" class="img-fluid align-self-center w-75 hide-md-image align-sm-center mb-3">
+                            <p class="text-justify">Becoming a volunteer at SEF gives you a chance to develop skills that are of cruciality
+                                at coming top in the workforce, and to get exposed to startup workspace culture, by
+                                getting in touch with as well as managing a diverse intercontinental community.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section">
-        <img src="assets/img/homepage/Group%203.png" class="d-none d-md-block"
-             style="position: absolute; max-width: 60%; left: 20%; top: 0%">
-        <img src="assets/img/homepage/Polygon%2010.png" class="d-none d-md-block"
-             style="position: absolute; max-width: 40%; left: -10%; top: 70%">
-        <div class="container my-5">
-            <div class="row justify-content-center py-5">
-                <div class="col-md-10">
-                    <div class="text-justify">
-                        <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tabs-text" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link tab-switcher mb-sm-3 mb-md-0 active py-4" id="tabs-text-1-tab"
-                                   data-toggle="tab"
-                                   href="#tabs-text-1" role="tab" aria-controls="tabs-text-1" aria-selected="true">
-                                    <span class="display-4 py-2 px-3 text-uppercase text-roboto">students</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link tab-switcher mb-sm-3 mb-md-0 py-4" id="tabs-text-2-tab"
-                                   data-toggle="tab"
-                                   href="#tabs-text-2" role="tab" aria-controls="tabs-text-2" aria-selected="false">
-                                    <span class="display-4 py-2 px-3 text-uppercase text-roboto">Experts</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link tab-switcher mb-sm-3 mb-md-0 py-4" id="tabs-text-3-tab"
-                                   data-toggle="tab"
-                                   href="#tabs-text-3" role="tab" aria-controls="tabs-text-3" aria-selected="false">
-                                    <span class="display-4 py-2 px-3 text-roboto text-uppercase">volunteers</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="card shadow mt-3">
-                        <div class="card-body">
-                            <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active px-5 py-3" id="tabs-text-1" role="tabpanel"
-                                     aria-labelledby="tabs-text-1-tab">
-                                    <ul class="description text-justify text-dark font-weight-400">
-                                        <li>
-                                            Interact directly with industry experts and academics that are hard to reach
-                                            and
-                                            exclusive via OneLive to gain valuable perspective and insight on how to
-                                            customise and innovate a new career path for you.
-                                        </li>
-                                        <li>
-                                            1 to 1 premium mentoring by industry experts and academics across the world
-                                            Exposure to postgraduate, internship and job opportunities. 
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="tab-pane fade px-5 py-3" id="tabs-text-2" role="tabpanel"
-                                     aria-labelledby="tabs-text-2-tab">
-                                    <ul class="description text-justify text-dark font-weight-400">
-                                        <li>Gain exposure to your work and projects.</li>
-                                        <li>Teaching/mentoring experience.</li>
-                                        <li>Ability to make an impact on the Sri Lankan education system.</li>
-                                        <li>Chance to connect with young talent in Sri Lanka.</li>
-                                    </ul>
-                                </div>
-                                <div class="tab-pane fade px-5 py-3" id="tabs-text-3" role="tabpanel"
-                                     aria-labelledby="tabs-text-3-tab">
-                                    <ul class="description text-justify text-dark font-weight-400">
-                                        <li>Develop In demand, skills needed for the job market when you graduate.</li>
-
-                                        <li>Working with a diverse international community/experience in managing a diverse
-                                            international community.</li>
-
-                                        <li>Exposure to startup work culture.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <section class="section section-logo">
+        <div class="container text-center mb-5">
+            <h4 class="font-weight-900 text-dark text-center text-capitalize mb-5">Press Coverage</h4>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-8 offset-2 offset-sm-0 mb-2">
+                    <a href="http://www.pulse.lk/everythingelse/sef-pushing-the-envelope-on-women-n-stem/"
+                       target="_blank">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/pulse.png">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-8 offset-2 offset-sm-0 mb-2">
+                    <a href="https://www.readme.lk/sustainable-education-foundation-2018/" target="_blank">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/readme.png">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-8 offset-2 offset-sm-0 mb-2">
+                    <a href="https://www.sbs.com.au/language/english/audio/scholar-x-an-initiative-to-mentor-sri-lankan-students-by-scholars-around-the-globe"
+                       target="_blank">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/sbs.png">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-8 offset-2 offset-sm-0 mb-2">
+                    <a href="https://youtu.be/u-Jv1beNSI4" target="_blank">
+                        <img class="mx-auto img-fluid"
+                             src="assets/img/logos/iv.png">
+                    </a>
                 </div>
             </div>
         </div>
@@ -309,7 +404,7 @@
 
 <!-- Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/esm/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.10.4/headroom.min.js"></script>
 <!-- Optional JS -->
@@ -319,10 +414,20 @@
 <script src="assets/js/global-custom-js.js"></script>
 <!-- Script for static navbar and footer -->
 <script src="assets/js/navigation.js"></script>
+<script id="star-note-content" type="text/html">
+    <p class="small text-muted text-left mb-0"> *Our mentors and speakers engage in mentoring and speaking voluntarily
+        in their leisure time<br> and we don't have a direct affiliation with the mentioned organisations</p>
+</script>
 <script>
     $(function () {
         loadNavAndFooter('assets/content/static')  //relative path to content directory
         // link to the navbar, footer content goes here
+    });
+
+    $(document).ajaxComplete(function () {
+        $("#star-note").html(
+            $("#star-note-content").html()
+        )
     })
 </script>
 </html>

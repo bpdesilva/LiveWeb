@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167873271-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-167873271-1');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Start your development with a Design System for Bootstrap 4.">
-    <meta name="author" content="Creative Tim">
-    <title>Sustainable Education Foundation</title>
+    <meta name="description" content="Success of every organization depends on the team<br> and we got the 'right'
+    team">
+    <meta name="author" content="Sustainable Education Foundation">
+    <meta property="og:image" content="assets/img/team-header.svg">
+    <title>Meet Our Team | Sustainable Education Foundation</title>
     <!-- Favicon -->
     <link href="assets/img/brand/favicon.png" rel="icon" type="image/png">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link href="assets/vendor/nucleo/css/nucleo.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet">
     <!-- Argon CSS -->
     <link type="text/css" href="assets/css/argon.css?v=1.0.1" rel="stylesheet">
     <!-- global CSS -->
@@ -45,7 +54,7 @@
 
 <section class="section pb-0" style="background-color: #f8fdff">
     <div class="container">
-        <p class="display-3 text-center">Advisory Panel</p>
+        <p class="display-3 text-center mb-5" >Advisory Panel</p>
 
         <!--Profile cards goes here-->
         <div id="advisoryPanel"></div>
@@ -58,7 +67,7 @@
 
 <section class="section pb-0">
     <div class="container">
-        <p class="display-3 text-center">Consultants</p>
+        <p class="display-3 text-center mb-5" >Consultants</p>
 
         <!--Profile cards goes here-->
         <div id="consultants"></div>
@@ -71,7 +80,7 @@
 
 <section class="section pb-0" style="background-color: #f8fdff">
     <div class="container">
-        <p class="display-3 text-center">External Collaborators</p>
+        <p class="display-3 text-center mb-5" >External Collaborators</p>
 
         <!--Profile cards goes here-->
         <div id="externalCollaborators"></div>
@@ -85,7 +94,7 @@
 
 <section class="section pb-0">
     <div class="container">
-        <p class="display-3 text-center">Executive Committee</p>
+        <p class="display-3 text-center mb-5">Executive Committee</p>
 
         <!--Profile cards goes here-->
         <div id="executiveCommitee"></div>
@@ -98,7 +107,7 @@
 
 <section class="section pb-0">
     <div class="container">
-        <p class="display-3 text-center">Tech Team</p>
+        <p class="display-3 text-center mb-5" >Dev Team</p>
 
         <!--Profile cards goes here-->
         <div id="techTeam"></div>
@@ -111,13 +120,26 @@
 
 <section class="section pb-0">
     <div class="container">
-        <p class="display-3 text-center">Design Team</p>
+        <p class="display-3 text-center mb-5 ">Design Team</p>
 
         <!--Profile cards goes here-->
         <div id="designTeam"></div>
 
         <div class="row justify-content-center">
             <button id="btnShowMore_designTeam" class="btn btn-link btn-outline-white btn-info">SEE MORE</button>
+        </div>
+    </div>
+</section>
+
+<section class="section pb-0">
+    <div class="container">
+        <p class="display-3 text-center mb-5 ">Alumni</p>
+
+        <!--Profile cards goes here-->
+        <div id="alumni"></div>
+
+        <div class="row justify-content-center">
+            <button id="btnShowMore_alumni" class="btn btn-link btn-outline-white btn-info mb-3">SEE MORE</button>
         </div>
     </div>
 </section>
@@ -131,7 +153,7 @@
 
 <!-- Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/esm/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.10.4/headroom.min.js"></script>
 <!-- Optional JS -->
@@ -155,7 +177,7 @@
                     {{#social}}
                     <div class="imgIcon">
                         <a href="https://www.linkedin.com/in/{{linkedin}}" class="btn btn-default btn-icon-only rounded-circle">
-                            <i class="fa fa-linkedin"></i>
+                            <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
                     {{/social}}
@@ -192,6 +214,7 @@
                 let executiveCommitee = payload.executiveCommitee;
                 let techTeam = payload.techTeam;
                 let designTeam = payload.designTeam;
+                let alumni = payload.alumni
 
                 loadData("advisoryPanel", advisoryPanel);
                 loadData("consultants", consultants);
@@ -199,6 +222,7 @@
                 loadData("executiveCommitee", executiveCommitee);
                 loadData("techTeam", techTeam);
                 loadData("designTeam", designTeam);
+                loadData("alumni", alumni);
 
             }
         });

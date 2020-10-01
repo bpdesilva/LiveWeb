@@ -462,3 +462,135 @@ body{
     background-color:#8741bb !important;
 }
 
+.bg-secondary-light
+{
+    background-color: #f7f8fa !important;
+}
+
+.faq .accordion .question {
+    font-size: 1.2em;
+    padding-left: 24px;
+    padding-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.faq .accordion .collapse-sign {
+    margin: -1.25rem -1.25rem -1.25rem auto;
+    padding: 0 50px 1.25rem 1.25rem;
+}
+
+.faq .accordion .qa-card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.faq .accordion .question .question-heading {
+    padding-right: 30px;
+}
+
+/*upcoming events card*/
+.card-event{
+    border-radius: 1rem;
+}
+
+.card-event .card-body .card-event-date{
+    border: 0.0625rem solid #fbc53b;
+    border-radius: 50%;
+    padding: .5rem .75rem;
+}
+
+.video-card:hover .content-on-hover {
+    display: block;
+}
+
+.video-card:hover .original-content, .video-card .content-on-hover {
+    display: none;
+}
+
+.video-card .video-description {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.rounded-05-rem {
+    border-radius: 0.5rem !important;
+}
+
+/*upcoming events card*/
+.card-event{
+    border-radius: 1rem;
+}
+
+.card-event .card-body .card-event-date{
+    border: 0.0625rem solid #fbc53b;
+    border-radius: 50%;
+    padding: .5rem .75rem;
+}
+
+/*logo display section*/
+.section-logo img:hover {
+    opacity: 1;
+    transition-duration: 500ms;
+}
+
+.section-logo img{
+    opacity: 0.5;
+}
+
+/*our projects display section*/
+.project-img {
+    padding: 15px;
+    width: 200px;
+    height: auto;
+}
+
+.project-card {
+    border-radius: 1.5rem;
+}
+
+.project-stat {
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.stats {
+    font-size: 13px;
+}
+
+@media (min-width: 120px) {
+    .carousel-item{
+        height: 200px;
+    }
+
+    .align-sm-center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+
+    .hide-sm-image{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .align-md-right {
+        display: block;
+        float: right;
+    }
+
+    .align-md-left {
+        display: block;
+        float: left;
+    }
+
+    .hide-md-image{
+        display: none;
+    }
+}
